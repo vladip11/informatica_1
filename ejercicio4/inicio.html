@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>serie</title>
+</head>
+<body>
+<script type="text/javascript">
+	function serie(){
+		this.c=0;
+		this.n=0;
+
+		this.x=0;
+		this.i=0;
+		this.sum=0;
+		with(this){
+			n=parseInt(prompt("ingresar n",5431));
+			x=parseInt(prompt("ingresar x",0.2));
+			do{
+			i=i+1;
+			console.log(c);
+			c=Math.pow(x,3*i)/(6*i-2);
+			sum=sum+(Math.pow((-1),(i-1))*Math.pow(x,3*i))/(6*i-2);
+			}while(n>i);
+			document.write("la suma es:"+sum);
+
+		}
+	}
+	serie();
+
+</script>
+</body>
+</html>

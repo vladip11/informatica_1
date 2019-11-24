@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trinomio</title>
+</head>
+<body>
+<script type="text/javascript">
+	function trinomio(){
+
+	this.a=0;
+	this.b=0;
+	this.c=0;
+	this.x1=0;
+	this.x2=0;
+	this.leerd=leerd;
+	this.calcx=calcx;
+	this.MostR=MostR;
+	
+
+		function 	leerd() {
+			with(this){
+				a=prompt("ingresar valor de a",4);
+				a=prompt("ingresar valor de b",3);
+				c=prompt("ingresar el valor de c",6);
+			}
+		}
+		function	calcx(){
+		with(this){
+			var d=b*b-4*a*c;	
+			if (d>=0) {
+				x1=-b/(2*a)+Math.sqrt(d)/(2*a);
+				x2=-b/(2*a)-Math.sqrt(d)/(2*a);
+			}
+			}
+		}
+		function	MostR(){
+			with(this){
+			document.write("   el valor de x1: ",x1);
+			document.write("   el valor de x2: ",x2);
+			}
+		}
+
+	
+}
+var trin=new trinomio();
+trin.leerd();
+trin.calcx();
+trin.MostR();
+delete trin;
+</script>
+</body>
+</html>
